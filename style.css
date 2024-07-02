@@ -1,0 +1,429 @@
+.education {
+    height: 80vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  a:hover{
+    font-size: 20px;
+  }
+
+  a{
+    transition:all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 1s;
+  }
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: black;
+    font-family: "Source Sans Pro";
+    color: #6cacc5;
+  }
+  
+  h2 {
+    text-align:center;
+    font-size: 40px;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  #eduul {
+    padding: 0px 0;
+    color: white;
+  }
+  
+  #eduul li {
+    position:relative;
+    list-style-type: none;
+    width: 6px;
+    background-color: white;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  
+  #eduul li::after {
+    background: white;
+    content: '';
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    }
+  
+  
+  #eduul li div{
+    position: relative;
+    width: 400px;
+    padding: 15px;
+    border-radius: 5px;
+    bottom: 0;
+    background: rgba(42,50,113, .28);
+  }
+  
+  #eduul li:nth-child(odd) div {
+    left: 45px;
+  }
+  
+  #eduul li:nth-child(even) div {
+    left: -445px;
+  }
+  
+  time {
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  #eduul li div {
+    visibility: hidden;
+    /* opacity: 0; */
+    transition: all .5s ease-in-out;
+  }
+  
+  #eduul li:nth-child(odd) div {
+    transform: translate3d(200px, 0, 0);
+  }
+  
+  #eduul li:nth-child(even) div {
+    transform: translate3d(-200px, 0, 0);
+  }
+  
+  #eduul li.show div {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  @media screen and (max-width: 900px) {
+    #eduul li div {
+      width: 250px;
+    }
+    #eduul li:nth-child(even) div {
+      left: -289px;
+      /*250+45-6*/
+    }
+  }
+  .daiict {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #333; /* Example background color */
+    /* padding: 10px; */
+    justify-content: space-around;
+  }
+  
+  #daimg {
+  
+      height: auto; 
+      width: 20px; 
+      display: inline-block; 
+      vertical-align: middle;
+      /* justify-content: space-around; 
+      align-items: center;  */
+      background-color: white;
+      background-image: url(da.png);
+      background-size: contain; /*Optional: Adjust based on your needs*/
+      background-repeat: no-repeat;/*  Optional: Adjust based on your needs*/
+      padding: 20px;
+  
+  }
+  #agimg{
+      height: auto; 
+      width: 20px; 
+      display: inline-block; 
+      vertical-align: middle;
+      justify-content: center; 
+      align-items: center;  
+      background-color: rgba(42,50,113, .28);
+      background-image: url(https://2021.codeavour.org/wp-content/uploads/2021/10/logo.ag-c7620d85.jpg);
+      background-size: contain; /*Optional: Adjust based on your needs*/
+      background-repeat: no-repeat;/*  Optional: Adjust based on your needs*/
+      padding: 20px;
+    
+  }
+  #shkimg{
+    height: auto; 
+      width: 20px; 
+      display: inline-block; 
+      vertical-align: middle;
+      justify-content: center; 
+      align-items: center;  
+      background-color: rgba(42,50,113, .28);
+      background-image: url(https://www.joonsquare.com/usermanage/image/business/s-h-kharawala-a-g-and-l-d-primary-school-ahmedabad-5394/s-h-kharawala-a-g-and-l-d-primary-school-ahmedabad-logo.png);
+      background-size: contain; /*Optional: Adjust based on your needs*/
+      background-repeat: no-repeat;/*  Optional: Adjust based on your needs*/
+      padding: 20px;
+  
+  }
+  
+  #dafont {
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+    font-size: 17px;
+    margin-left: 10px;
+    width: 80%;
+  }
+  #btech{
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+.daiict {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #333; /* Example background color */
+  /* padding: 10px; */
+  justify-content: space-around;
+}
+#navcont{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20vw;
+}
+
+.collapse{
+    margin-left: 40vw;
+}
+
+
+  .animate-charcter {
+  
+    background-image: linear-gradient(-225deg,
+        #231557 0%,
+        #44107a 29%,
+        #ff1361 67%,
+        #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 12vh;
+  }
+  
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+  
+  .about {
+  
+    background-color: black;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .animate {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    margin-top: 10px;
+  }
+  
+  h1 {
+    font-size: 12vh;
+  }
+  
+  
+  .left {
+    background-color: black;
+    margin-top: 50px;
+    margin-left: 15vw;
+    height: 70%;
+    width: 40vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    overflow-x: visible;
+  
+  }
+  
+  #two {
+    font-size: 5vh;
+  }
+  
+  .right {
+    background-color: black;
+    margin-top: 50px;
+    margin-right: 15vw;
+    height: 60%;
+    width: 20vw;
+    border: 10px solid white;
+    border-radius: 14px;
+    background-image: url(Profile.jpg);
+    background-size:cover;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0.2rem 0.2rem 0.5rem white);
+  }
+  
+  @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+
+
+  .container {
+    max-width: 100vw;
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* grid-gap: 35px; */
+    margin: 0 10%;
+    padding: 40px 20%;
+    /* height: 100%; */
+    text-overflow: ellipsis;
+    justify-content: center;
+
+
+    .card {
+      position: relative;
+      width: 20%;
+      height:100px;
+      margin: 0 10px 0 10px;
+      background: #000;
+      border-radius: 15px;
+      box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+      text-overflow:hidden;
+
+      .face {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-overflow: ellipsis;
+
+        &.face1 {
+          box-sizing: border-box;
+          padding: 20px;
+          text-overflow: ellipsis;
+
+
+          h2 {
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+          }
+
+          .java {
+            background-color: #fffc00;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+
+          .python {
+            background-color: #00fffc;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+
+          .cSharp {
+            background-color: #fc00ff;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+
+        &.face2 {
+          transition: 0.5s;
+          text-overflow: ellipsis;
+
+
+          h2 {
+            margin: 0;
+            padding: 0;
+            font-size: 10em;
+            color: #fff;
+            transition: 0.5s;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+          }
+        }
+      }
+    }
+
+    .card:hover .face.face2 {
+      height: 20%;
+
+      h2 {
+        font-size: 2em;
+      }
+    }
+
+    .card:nth-child(1) .face.face2 {
+      background-image: linear-gradient(
+        40deg,
+        #fffc00 0%,
+        #fc00ff 45%,
+        #00fffc 100%
+      );
+      border-radius: 15px;
+    }
+
+    .card:nth-child(2) .face.face2 {
+      background-image: linear-gradient(
+        40deg,
+        #fc00ff 0%,
+        #00fffc 45%,
+        #fffc00 100%
+      );
+      border-radius: 15px;
+    }
+
+    .card:nth-child(3) .face.face2 {
+      background-image: linear-gradient(
+        40deg,
+        #00fffc 0%,
+        #fc00ff 45%,
+        #fffc00 100%
+      );
+      border-radius: 15px;
+    }
+  }
+
+#skills{
+  height: 150vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 20vw 0 20vw;
+}
+
+.heading{
+  /* margin-top: 50px; */
+  margin-bottom: 50px;
+}
+
+
+html{
+  width: 100%;
+}
